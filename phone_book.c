@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
     fclose(fp);
     exit(0);
   } else if (strcmp(argv[1], "search") == 0) {  /* Handle search */
-   // printf("NOT IMPLEMENTED!\n"); /* TBD  */
+   /* TBD  */
        FILE *fp = open_db_file();
     char *name=argv[2];
     entry *p=load_entries(fp);
@@ -113,7 +113,7 @@ FILE *open_db_file() {
 }
   
 void free_entries(entry *p) {
-  /* TBD */ // printf("Memory is not being freed. This needs to be fixed!\n");  
+  /* TBD */ 
   entry *q;
   q=p;
   while(p){
